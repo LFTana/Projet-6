@@ -1,4 +1,4 @@
-("Pour utiliser le convertisseur Arabe a Romain tapez '1' Pour utiliser le convertisseur Romain a Arabe tapez '2' : ")
+a=input("Pour utiliser le convertisseur Arabe a Romain tapez '1' Pour utiliser le convertisseur Romain a Arabe tapez '2' : ")
 if a=="1":
     arabe=int(input("entrez un nombre < ou = a 3999: "))
     I, IV, V, IX, X, XL, L, XC, C, CD, D, CM, M = 1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1000
