@@ -68,5 +68,7 @@ elif a=="2":
       else:
         arabic_number += romans[ch]
     print (arabic_number)
+elif a!= "1" or a!= "2" :
+    print(" Veuillez choisir une fonction valide du convertisseur")
 
 
