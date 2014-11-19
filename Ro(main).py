@@ -51,23 +51,23 @@ if a=="1":
         print("il n'existe pas de nombre au dela de 3999 en romain. Veuillez entre un nombre < ou = a 3999")
 elif a=="2":
     romans = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
-    arabic_number = 0
-    st_roman_number =input("entrez votre chiffre romain: ")
-    lst_substract = []
+    arabe = 0
+    romain =input("entrez votre chiffre romain: ")
+    liste_soustractive = []
 
-    n = len(st_roman_number)
+    n = len(romain)
     for i in range(n-1):
-      ch = st_roman_number[i]
-      ch2 = st_roman_number[i+1]
+      ch = romain[i]
+      ch2 = romain[i+1]
       if (romans[ch] < romans[ch2]):
-        lst_substract.append(i)
+        liste_soustractive.append(i)
     for i in range(n):
-      ch = st_roman_number[i]
-      if (i in lst_substract):
-        arabic_number -= romans[ch]
+      ch = romain[i]
+      if (i in liste_soustractive):
+        arabe -= romans[ch]
       else:
-        arabic_number += romans[ch]
-    print (arabic_number)
+        arabe += romans[ch]
+    print (arabe)
 elif a!= "1" or a!= "2" :
     print("Veuillez choisir une fonction valide du convertisseur")
 
